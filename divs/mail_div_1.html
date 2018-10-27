@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Fork - Email</title>
+
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			line-height: 160%;
+		}
+
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		body {
+			font-family: 'Lato';
+			font-size: 13px;
+			text-rendering: optimizeLegibility;
+			color: #1D2226;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+		
+		.cover {
+			width: 100%;
+			background: #5AC8FA;
+		}
+
+		.wrapper {
+			max-width: 600px;
+			min-height: 1px;
+			margin: 0 auto;
+			background: #fff;
+		}
+
+		.row__banner {
+			width: 100%;
+		}
+
+		.row__bloque {
+			width: unset;
+			padding: 30px 20px;
+		}
+
+		.row__bloque h1 {
+			font-size: 14px;
+		}
+
+		.row__main {
+			width: unset;
+			padding: 0 20px 0;
+		}
+
+		.row__title {
+			width: unset;
+			padding: 15px 0
+		}
+
+		.row__title h1 {
+			font-size: 14px;
+		}
+
+		.row__total {
+			width: unset;
+			padding: 30px 20px;
+			text-align: right;
+		}
+
+		.row__total h2 {
+			font-size: 14px;
+		}
+
+		.row__items {
+			width: 100%;
+			min-height: 1px;
+			margin: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.row__items:before, .row__items:after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.columns__portada {
+			width: 50%;
+		}
+
+		.columns__portada img {
+			border: 1px solid #ccc;
+		}
+
+		.columns__contenido {
+			width: 40%;
+			padding: 0 5%;
+			justify-content: center;
+		}
+
+		.row__aside {
+			width: unset;
+			text-align: center;
+			padding: 30px 120px;
+			background: #f5f5f5;
+		}
+
+		.cta {
+			width: 160px;
+			margin: 15px auto 0;
+			font-size: 12px;
+			text-align: center;
+			background: #5AC8FA;
+		}
+
+		.cta a {
+			padding: 10px 0;
+			display: block;
+			text-decoration: none;
+		}
+
+		.row__footer {
+			width: unset;
+			padding: 30px 20px;
+			display: flex;
+		}
+
+		.columns__footer {
+			width: 50%;
+		}
+
+		.columns__footer__sociales {
+			width: 50%;
+			text-align: right;
+		}
+
+		.columns__footer__sociales ul li {
+			display: inline-block;
+		}
+
+		.row__cierre {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 600px) {
+
+			.row__aside {
+				width: unset;;
+				padding: 30px 20px;
+			}
+
+			.row__footer {
+				width: unset;
+				padding: 30px 20px;
+				display: block;
+			}
+
+			.columns__footer {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.columns__footer__sociales {
+				width: 100%;
+				text-align: center;
+			}
+
+			.columns__footer__sociales ul li {
+				display: inline-block;
+			}
+
+			.columns__portada {
+				width: 100%;
+			}
+
+			.columns__portada img {
+				border: 1px solid #ccc;
+			}
+
+			.columns__contenido {
+				width: 100%;
+				padding: 0;
+				justify-content: center;
+			}
+
+			.row__items {
+				width: 100%;
+				min-height: 1px;
+				margin: 0;
+				display: block;
+				align-items: center;
+				margin-bottom: 30px;
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="cover">
+		<div class="wrapper">
+			
+			<div class="row__banner">
+				<a href="https://forkchile.cl">
+					<img src="assets/img/banner.jpg" alt="Fork">
+				</a>
+			</div>
+
+			<div class="row__bloque">
+				<h1>Hola</h1>
+				<p>Tenemos el gusto de confirmar que tu pedido ya está disponible en Tienda Las Lilas. Puedes venir a retirarlo hasta las 21 hrs. ¡Te esperamos!</p>
+			</div>
+
+			<div class="row__main">
+				
+				<div class="row__title">
+					<h1>Detalles</h1>
+				</div>
+
+				<div class="row__items">
+					<div class="columns__portada">
+						<img src="assets/img/agua.jpg" alt="Fork">
+					</div>
+					<div class="columns__contenido">
+						<h3>3 Agua de Vertiente Rústica</h3>
+						<p>300 ml <br> $2.370</p>
+					</div>
+				</div>
+
+				<div class="row__items">
+					<div class="columns__portada">
+						<img src="assets/img/lasagna.jpg" alt="Fork">
+					</div>
+					<div class="columns__contenido">
+						<h3>1 Lasaña boloñesa con carne de ternera</h3>
+						<p>6 personas <br> $10.490</p>
+					</div>
+				</div>
+
+				<div class="row__items">
+					<div class="columns__portada">
+						<img src="assets/img/mechada.jpg" alt="Fork">
+					</div>
+					<div class="columns__contenido">
+						<h3>2 Carne mechada con gnocchis a la toscana</h3>
+						<p>$11.990</p>
+					</div>
+				</div>
+
+				<div class="row__total">
+					<h2>Total a pagar: $00.000</h2>
+				</div>
+			</div>
+
+			<div class="row__aside">
+				<p>Si necesitas solucionar un problema o aclarar dudas, comunícate con nosotros a través del chat de ayuda en el sitio web o mediante este link.</p>
+				<div class="cta">
+					<a href="https://forkchile.cl" class="cta__btn">Ver Más</a>
+				</div>
+			</div>
+
+			<div class="row__footer">
+				<div class="columns__footer">
+					<p>© Better Food SpA <br>Av. Américo Vespucio 1710, Quilicura. CHILE <br> Clic</p>
+				</div>
+				<div class="columns__footer__sociales">
+					<ul>
+						<li><a href="https://www.instagram.com/forkchile"><img src="assets/img/instagram.jpg" alt="Fork"></a></li>
+						<li><a href="https://www.facebook.com/forkchile"><img src="assets/img/facebook.jpg" alt="Fork"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row__cierre">
+				<img src="assets/img/cierre.png" alt="Fork">
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
